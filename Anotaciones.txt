@@ -1,0 +1,50 @@
+https://www.youtube.com/watch?v=nSA3SVC0gqc
+
+Diferencia entre Interfaz y Clase Abstracta
+Clase abstracta: es una clase y ademas puede contener codigo que se ejecute en si a diferencia de una interfaz, que tiene solamente un tipado, no tiene codigo de logica ni funciones, y las interfaces se pueden implementar multiples, las clases no.
+
+aws.amazon.com
+
+LIGHSAIL
+Servidor para novatos
+Configuracion predeterminada
+
+- Seleccionar zona (Ohio mas economica)
+- Sistema operativo (ej Ubuntu)
+- Crear instancia
+- Obtener llave llave temp (clave perdeterminada/default key) 
+- Datos:
+	- ip
+	- nombre de usuario
+	- llave predeterminada
+- Acceder por consola:
+
+En windows:
+Editar archivo para que solo tenga permisos el usuario actual de la computadora
+ssh -i ./llave.pem ubuntu@3.15.151.248
+sudo su
+apt-get update //verifica actualizaciones
+apt-get upgrade //realiza la actualización 
+sudo apt install nodejs //instalar node ubuntu
+ 
+ls
+bash nodesource_setup.sh
+sudo apt-get install -y nodejs
+node -v
+npm -v
+
+//instalar nginx
+sudo apt install nginx
+
+//activar firewall para ciertos protocolos y demas cosas
+//nos da una lista de los firewall disponibles
+sudo ufw app list
+
+//instalar firewal "Nginx HTTP"
+sudo ufw allow 'Nginx HTTP'
+
+//verificar el estado de Nginx
+systemctl status nginx
+
+//subir codigo al servidor web de ec2
+Subir a traves de un repositorio
